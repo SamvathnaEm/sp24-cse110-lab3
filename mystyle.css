@@ -1,0 +1,368 @@
+/* Define the variable*/
+:root
+{
+    --main-bg-color: color(display-p3, 0.678, 0.847, 0.902); ;
+}
+
+body
+{
+    font-family:sans-serif;
+    background-color: lightcyan;
+    color: #333; 
+    text-align: left; /*left default text alignment*/
+}
+
+/* header part*/
+
+header, nav, main, footer
+{
+    border: 1px solid #e7d6d6; /* shorthand for border */
+    padding: 20px; /* shorthand for padding */
+    margin-bottom: 20px; /* shorthand for margin*/
+}
+
+header {
+    border: 1px solid #e7d6d6;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    div {
+        color: #333;
+        font-family: "Dancing Script", cursive;
+        font-size: 20pt;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #f4f4f4;
+    border-radius: 5px; /* rounded corners */
+    padding: 10px 20px; /* vertical and horizontal padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* subtle shadow for depth */
+    text-align: center;
+}
+
+nav ul 
+{
+    padding: 0;
+    margin: 0; /* Ensure the list aligns properly with no extra space */
+    list-style: none;
+    /*apply flex to the display property*/
+    display: flex;
+    justify-content: center; /* Center-align the list items */
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+nav ul li 
+{
+    display: inline-block;
+    margin-right: 10px; /* space between items */
+    margin-bottom: 5px; /* space below each item to accommodate wrapping */
+}
+
+nav > ul
+{
+    background-color: #eeeeee;
+}
+
+h2 ~ ul {
+    color: rgb(11, 7, 42);
+}
+
+h2 + p {
+    color:gray
+}
+
+
+nav a {
+    text-decoration: none;
+    color: darkblue;
+    padding: 8px 12px; /* padding around link text for better clickability */
+    display: block; /* make the anchor cover the padding area */
+    border-radius: 3px; /* optional: rounded corners for links */
+    transition: background-color 0.3s; /* smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: #e0e0e0; /* light grey background on hover */
+    text-decoration: underline;
+}
+
+/* Main body part*/
+main
+{
+    margin: 0 auto 20px;
+    text-align: justify;
+
+}
+
+h1
+{
+    color:color-mix(in lch, plum 40%, rgb(20, 6, 70));
+    text-decoration: underline;
+}
+
+h2
+{
+    color: hsl(242, 86%, 49%);
+    margin-top: 0; /*longhand for top margin*/
+    margin-bottom: 10px; /*longhand for bottom margin*/
+    text-decoration: underline;
+}
+
+h3
+{
+    font-size: 1.5em;
+}
+
+h1,h2,h3
+{
+    margin-left: 5px;
+}
+
+img
+{
+    display: inline-block;
+    width: 650px;
+    height: 500px;
+    max-width: 650px;
+    min-width: 400px;
+}
+
+video
+{
+    position: static;
+    width: 15cm;
+    height: 20cm;
+    max-width: 15cm;
+    min-width: 12cm;
+}
+
+audio
+{
+    position: relative;
+    top: 1px; left: 5px;  
+}
+
+
+
+details summary
+{
+    cursor: pointer;
+    padding: 5px; 
+    margin-top: 5px; /*longhand for top margin*/
+    margin-bottom: 5px; /*longhand for bottom margin*/
+}
+
+/* footer styles*/
+
+footer
+{
+    background-color: #eee;
+    text-align: center;
+    padding: 15px; /* shorthand for all sides */
+    margin-top: 20px; /* longhand for top margin */
+    border-top: 3px solid green; /* shorthand for border */
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: green;
+}
+
+fieldset
+{
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 2px;
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border: 2px solid #ccc; 
+    box-sizing: border-box; 
+}
+
+nav 
+{
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-width: 1px;
+    border-radius: 5px; /* Rounded corners demonstrated with border-radius */
+}
+
+input[type="text"], input[type="email"], textarea, select {
+    width: 25vw;
+    height: 3vw;
+}
+
+input[type="text"]
+{
+    border-color: blue;
+}
+
+legend
+{
+    font-size: 13pt;
+    padding-left: 5px; 
+}
+
+br
+{
+    margin-bottom: 5mm;
+}
+
+
+button
+{
+    display: inline;
+    padding: 10px 20px; /* shorthand for padding*/
+    background-color: var(--main-bg-color, #ffcccc);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 3cm;
+}
+
+button:active
+{
+    display: inline;
+    padding: 10px 20px; /* shorthand for padding*/
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 3cm;
+}
+
+body 
+{
+    background-color: lightcyan;
+}
+
+/* Grid Section Styles */
+.grid-section {
+    display: grid; /* Sets up a grid container */
+    grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
+    grid-gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the entire grid */
+}
+
+.grid-item {
+    background-color: #f4f4f4; /* Light grey background for each grid item */
+    text-align: center; /* Centers the text within each grid item */
+    padding: 10px; /* Padding inside each grid item */
+    border: 1px solid #ccc; /* Border for each grid item */
+    border-radius: 5px; /* Rounded corners for each grid item */
+}
+
+div.grid-item
+{
+    border-color: #666;
+}
+
+/* Base styles */
+body, header, nav, main, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in the total width and height */
+}
+
+/* Responsiveness on desktop */
+@media (min-width: 1024px) {
+    nav ul {
+        justify-content: flex-start; /* Align nav items to the start on larger screens */
+    }
+
+    .grid-section {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+    }
+
+    input[type="text"], input[type="email"], textarea, select {
+        width: 20vw; /* Smaller relative width on larger screens */
+    }
+
+    img, video {
+        width: 100%; /* Makes images and videos responsive */
+        height: auto; /* Maintains the aspect ratio */
+        max-width: 90%; /* Ensures they never exceed the parent's width */
+    }
+    
+    audio {
+        width: 90%; /* Makes audio controls responsive */
+    }
+}
+
+/* Responsiveness on tablets or smaller laptops */
+@media (max-width: 1023px) and (min-width: 768px) {
+    nav ul {
+        flex-direction: row; /* Keeps nav items in a row but with more spacing */
+        flex-wrap: wrap;
+    }
+
+    .grid-section {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    }
+
+    body {
+        font-size: 14px; /* Slightly larger font for readability on smaller devices */
+    }
+    img, video {
+        max-width: 95%; 
+    }
+}
+
+/* Responsiveness on phones */
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically on small screens */
+        align-items: center;
+    }
+
+    .grid-section {
+        grid-template-columns: 1fr; /* One column for small screens */
+    }
+
+    header, main, footer {
+        padding: 10px; /* Less padding to maximize screen use */
+    }
+
+    body {
+        font-size: 12px; /* Smaller font that fits better on small screens */
+    }
+
+    .grid-item {
+        padding: 8px; /* Smaller padding within grid items */
+    }
+
+    button, input[type="text"], input[type="email"], textarea, select {
+        width: 90%; /* Full width for better accessibility */
+    }
+    img, video {
+        max-width: 90%; 
+    }
+}
+
+#Meeting-formart
+{
+    color: darkblue;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+nav:has(a.active) {
+    border-color: red;
+}
+
+
+
+
+
