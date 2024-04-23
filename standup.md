@@ -81,7 +81,7 @@
 
 
 ## Future Meeting this week
-- [ ] Monday, 22 April 2024 9:30pm - 10:30pm
+- [x] Monday, 22 April 2024 9:30pm - 10:30pm
 - [ ] Wednesday, 24 April 2024 12:00pm - 1:00pm
 - [ ] Friday, 26 April 2024 3:15pm - 4:15pm
 
