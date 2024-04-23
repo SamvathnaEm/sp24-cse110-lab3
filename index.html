@@ -4,6 +4,12 @@
     <meta name="viewport" content = "width= device-width, initial-scale=1.0">
     <title>Team#8 Meeting Info </title>
     <link rel="icon" href="team_logo.png">
+    <link rel="stylesheet" href="mystyle.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jacquard+24&display=swap" rel="stylesheet">
+
   </head>
   <body>
 
@@ -25,6 +31,7 @@
                 <li><a href="#audio-recording-video-recording">Audio recording & video recording</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
@@ -33,8 +40,8 @@
         <h1>Meeting of Team #8</h1>
 
         <h2>Quick Note: </h2>
-        <h3>The last meeting was on April 11, 2024</h3>
-        <h3>Here's the topic we covered: Group Bonding Event, Group Logo, Branding, Page, and Video</h3>
+        <h4>The last meeting was on April 11, 2024</h4>
+        <h4>Here's the topic we covered: Group Bonding Event, Group Logo, Branding, Page, and Video</h4>
         
         <section>
         
@@ -44,12 +51,19 @@
             <summary> Previous meeting(s):</summary>
             <br>
             <span>The meeting was held in person at <b class="keyword"> CTL 0125</b> on <strong>Thursday, 11 April 2024 6:20pm</strong>.</span>
+            <br>
+            <span> The meeting was held in person at <b class="keyword"> CTL 0125</b> on <strong>Tuesday, 16 April 2024 6:20pm</strong>.</span>
             </details>
             <br>
             <details>
             <summary>Future meeting(s):</summary>
             <br>
-            <span> The meeting will be held in person at <b class="keyword"> CTL 0125</b> on <strong>Tuesday, 16 April 2024 6:20pm</strong>.</span>
+            <section class="grid-section">
+                <div class="grid-item">22 April 2024 <br> 9:30pm - 10:30pm </div>
+                <div class="grid-item">24 April 2024 <br> 12:00pm - 1:00pm</div>
+                <div class="grid-item">26 April 2024 <br> 3:15pm - 4:15pm</div>
+            </section>
+            <br>
             </details>
         </section>
         
@@ -140,12 +154,11 @@
             <p>Here's the diagram we discussed in the last meeting on <b class="keyword">April 11, 2024</b></p>
             
             <img src="diagram.jpeg" 
-            alt="diagramPresentation"
-            width="650">
+            alt="diagramPresentation">
         
         <h2 id ="audio-recording-video-recording">Audio recording & video recording </h2>
             <p>Here's the video we recorded in the last meeing <b class="keyword">April 11, 2024</b></p>
-            <video controls width="650">
+            <video controls >
                 <source src="teamintro.mp4" type="video/mp4">
             </video> 
 
@@ -155,12 +168,20 @@
     </main>
 
     <footer>
-        <h3>Thank you for visiting our meeting minutes webpage, please feel free to request a future meeting this month here.</h3>
+        <h3 style="color:rgb(47, 79, 70);text-align:center;"> Thank you for visiting our meeting minutes webpage!</h3>
+        <h3 style="color:rgb(47, 79, 70);text-align:center;">Please feel free to request a future meeting this month here,</h3>
         
-        <fieldset>
+        <style>
+            fieldset{
+                background-color: color(display-p3 0.234 0.567 0.789);
+            }
+    
+        </style>
+
+        <fieldset >
             <form action="#" method="get" class="form-example"></form>
             <div class="form-example">
-                <label for="name">Enter your name:</label>
+                <label for="name">Enter your name: </label>
                 <input type="text" name="name" id="name" required>
             </div>
             
