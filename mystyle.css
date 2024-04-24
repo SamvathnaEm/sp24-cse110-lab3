@@ -1,7 +1,7 @@
 /* Define the variable*/
 :root
 {
-    --main-bg-color: color(display-p3, 0.678, 0.847, 0.902); ;
+    --main-bg-color: color(display-p3, 0.678, 0.847, 0.902); 
 }
 
 body
