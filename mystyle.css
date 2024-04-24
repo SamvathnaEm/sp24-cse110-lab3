@@ -374,7 +374,7 @@ fieldset {
         width: 90%; /* Full width for better accessibility */
     }
     img, video {
-        max-width: 90%; 
+        max-width: 80%; 
     }
 }
 
