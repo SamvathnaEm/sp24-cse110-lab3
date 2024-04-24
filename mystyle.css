@@ -26,7 +26,7 @@ header {
     padding: 20px;
     margin-bottom: 20px;
 
-    & div {
+    div {
         color: #333;
         font-family: "Dancing Script", cursive;
         font-size: 20pt;
@@ -34,6 +34,7 @@ header {
         margin-bottom: 10px;
     }
 }
+
 
 /* Navigation Styles */
 nav {
@@ -136,9 +137,9 @@ img
 video
 {
     position: static;
-    width: 15cm;
+    width: 12.5cm;
     height: 20cm;
-    max-width: 15cm;
+    max-width: 12.5cm;
     min-width: 12cm;
 }
 
@@ -178,6 +179,7 @@ footer
 
 fieldset
 {
+    gap: 20px;
     border-style: solid;
     border-color: #ccc;
     border-width: 2px;
@@ -197,7 +199,7 @@ nav
 }
 
 input[type="text"], input[type="email"], textarea, select {
-    width: 25vw;
+    width: 18vw;
     height: 3vw;
 }
 
@@ -290,11 +292,11 @@ body, header, nav, main, footer {
     img, video {
         width: 100%; /* Makes images and videos responsive */
         height: auto; /* Maintains the aspect ratio */
-        max-width: 90%; /* Ensures they never exceed the parent's width */
+        max-width: 50%; /* Ensures they never exceed the parent's width */
     }
     
     audio {
-        width: 90%; /* Makes audio controls responsive */
+        width: 50%; /* Makes audio controls responsive */
     }
 }
 
@@ -315,6 +317,34 @@ body, header, nav, main, footer {
     img, video {
         max-width: 95%; 
     }
+    
+}
+
+/*responsiveness for smaller screen*/
+@media (max-width: 768px) {
+    fieldset {
+        padding: 15px; 
+        margin: 10px auto; 
+        font-size: 16px; 
+    }
+}
+
+fieldset input, fieldset button {
+    transition: all 0.3s ease; /* Adds a smooth transition effect for all changes */
+}
+
+fieldset input:focus, fieldset button:hover {
+    border-color: #007BFF; /* Highlights the border color on focus or hover */
+    box-shadow: 0 0 8px rgba(0,123,255,0.6); /* Adds a subtle glow effect for better visibility */
+}
+
+fieldset input[type="text"], fieldset input[type="email"], fieldset input[list="date-april"], fieldset textarea, fieldset select {
+    min-height: 44px; /* Ensures a larger touch area, meeting accessibility standards */
+    width: 100%; /* Full width to accommodate smaller screen sizes */
+}
+
+fieldset {
+    font-size: calc(1rem + 0.5vw); /* Dynamically adjust font size based on the width of the viewport */
 }
 
 /* Responsiveness on phones */
@@ -361,8 +391,3 @@ body, header, nav, main, footer {
 nav:has(a.active) {
     border-color: red;
 }
-
-
-
-
-
